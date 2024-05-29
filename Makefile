@@ -3,3 +3,6 @@ ci:
 
 build:
 	docker compose -f docker-compose.yml build app
+
+push-image:
+	docker-compose -f docker-compose.yml push app
