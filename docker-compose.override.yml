@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    restart: always
+    command: make dev
+    volumes:
+      - type: bind
+        source: ./app
+        target: /app
+    ports:
+      - 8080:8080

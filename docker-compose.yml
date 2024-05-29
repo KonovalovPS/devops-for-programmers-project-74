@@ -1,0 +1,12 @@
+services:
+  app:
+    image: pavel123321/devops-for-programmers-project-74
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    restart: always
+    command: make test
+    volumes:
+      - type: bind
+        source: ./app
+        target: /app
