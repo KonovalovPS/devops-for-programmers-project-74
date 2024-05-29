@@ -20,5 +20,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          file: docker-compose.yml
+          file: Dockerfile.production
           tags: pavel123321/devops-for-programmers-project-74:latest
