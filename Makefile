@@ -6,3 +6,6 @@ build:
 
 push-image:
 	docker-compose -f docker-compose.yml push app
+
+start:
+	docker compose up
