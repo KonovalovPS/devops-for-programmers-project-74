@@ -5,8 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo "DATABASE_USERNAME=${{ secrets.DATEBASE_USERNAME }} DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD}}" > .env
       - run: make ci
+        env:
+          DATABASE_USERNAME: ${{ secrets.DATEBASE_USERNAME }}
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD}}
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
