@@ -6,7 +6,3 @@ services:
       dockerfile: Dockerfile.production
     restart: always
     command: make test
-    volumes:
-      - type: bind
-        source: ./app
-        target: /app

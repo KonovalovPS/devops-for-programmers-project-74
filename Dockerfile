@@ -6,7 +6,7 @@ COPY /app .
 
 RUN apt-get update && apt-get install make
 
-RUN make install
+RUN npm install && npm rebuild sqlite3 --build-from-source
 RUN make build
 
 CMD ["make", "start"]
