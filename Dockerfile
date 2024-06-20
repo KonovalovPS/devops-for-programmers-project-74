@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY /app .
 
-RUN apt-get update && apt-get install make
-
 RUN npm install && npm rebuild sqlite3 --build-from-source
 RUN make build
 
