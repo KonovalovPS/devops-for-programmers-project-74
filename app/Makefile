@@ -1,7 +1,7 @@
 setup: install db-migrate
 
 install:
-	npm install && npm rebuild sqlite3 --build-from-source
+	npm install
 
 db-migrate:
 	npm run migrate
