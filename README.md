@@ -3,6 +3,8 @@
 ![Push-image](https://github.com/KonovalovPS/devops-for-programmers-project-74/actions/workflows/push.yml/badge.svg)
 ](https://github.com/KonovalovPS/devops-for-programmers-project-74/actions)
 
+Подготовка файловой системы к локальному запуску (нужно сделать перед другими командами): `make prepare`
+
 запустить сервис: `make start`
 
 прогнать тесты: `make ci`

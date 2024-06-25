@@ -1,3 +1,6 @@
+prepare:
+	cp .env.example .env
+
 ci:
 	docker compose -f docker-compose.yml up --timeout 600 --abort-on-container-exit app
 

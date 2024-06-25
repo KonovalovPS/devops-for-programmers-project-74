@@ -16,7 +16,3 @@ services:
       - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
     depends_on:
       - app
-
-volumes:
-  caddy_data:
-  caddy_config:
