@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY /app .
 
-RUN npm install && npm rebuild sqlite3 --build-from-source
+RUN npm install
 RUN make build
 
 CMD ["make", "start"]
