@@ -1,5 +1,6 @@
 services:
   app:
+    env_file: ".env"
     image: pavel123321/devops-for-programmers-project-74
     build:
       context: .
