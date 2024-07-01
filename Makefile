@@ -1,8 +1,8 @@
 prepare:
-	cp .env.example .env && cp .env.example app/.env
+	cp -n .env.example .env
 
 ci:
-	docker compose -f docker-compose.yml up --timeout 600 --abort-on-container-exit app
+	docker compose -f docker-compose.yml up --timeout 600 --abort-on-container-exit app --build
 
 build:
 	docker compose -f docker-compose.yml build app
